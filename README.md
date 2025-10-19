@@ -1,67 +1,45 @@
-# HELOYS Landing Page
+# 🌊 HELOYS - Coming Soon
 
-A dark, moody, and urban-themed landing page for HELOYS featuring a three-panel layout with subscription functionality.
+A beautiful, responsive landing page for HELOYS with a stunning water-gradient design and email subscription feature.
 
-## Features
+## ✨ Features
 
-- **Three-Panel Layout**: Central panel with main content, side panels with atmospheric umbrella scenes
-- **Masked Figure**: Stylized central figure with orange garment and dark brown overalls
-- **Water Gradient Button**: Sophisticated button styling with wet, reflective appearance
-- **Subscription Form**: Name and email input fields with glass-morphism styling
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Urban Aesthetic**: Dark theme with strategic use of vibrant colors (red, orange, white)
+- **Responsive Design** - Perfect on desktop, tablet, and mobile
+- **Glassmorphism Effects** - Modern iOS-inspired gradient boxes
+- **Email Subscription** - Collect subscriber emails with expandable form
+- **Instagram Integration** - Direct link to @heloysco
+- **Admin Panel** - View all subscribers (Ctrl+Shift+A)
 
-## Installation
+## 🎨 Design
 
-1. Install dependencies:
-```bash
-npm install
-```
+- Water-gradient buttons with smooth animations
+- Glassmorphism subscription box with backdrop blur
+- Custom background images for desktop and mobile
+- Elegant typography and spacing
+- Instagram icon with hover effects
 
-2. Start the development server:
-```bash
-npm start
-```
+## 🚀 Live Demo
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Visit the live site: **[https://alichaaraoui.github.io/CasaHeloys/](https://alichaaraoui.github.io/CasaHeloys/)**
 
-## Build for Production
+## 📱 Mobile Optimized
 
-```bash
-npm run build
-```
+- Different background image for mobile devices
+- Responsive logo and text sizing
+- Touch-friendly subscription form
+- Optimized for all screen sizes
 
-This builds the app for production to the `build` folder.
+## 🔧 Built With
 
-## Design Elements
+- React
+- CSS3 with modern features (backdrop-filter, gradients)
+- GitHub Pages for hosting
+- Local Storage for email collection
 
-### Central Panel
-- HELOYS brand logo in stylized serif font
-- "COMING SOON" message
-- Subscription form with name and email fields
-- Masked figure with urban background elements
+## 📧 View Subscribers
 
-### Side Panels
-- **Left Panel**: Two figures walking under an umbrella in a rainy scene
-- **Right Panel**: Single figure standing with umbrella and urban reflections
+Press **Ctrl + Shift + A** (or **Cmd + Shift + A** on Mac) to view all collected email subscribers.
 
-### Color Palette
-- **Dominant**: Deep blacks, dark grays, dark browns
-- **Accent**: Vibrant red (#dc143c), warm orange (#ff6b35), crisp white
-- **Atmosphere**: Rainy, urban, nocturnal, edgy
+---
 
-### Water Gradient Button
-The subscription button features:
-- Semi-transparent dark background with blur effect
-- Subtle light reflection animation on hover
-- Wet, glossy appearance mimicking water surfaces
-- Smooth transitions and depth effects
-
-## Technologies Used
-
-- React 18
-- CSS3 with advanced animations
-- Glass-morphism design patterns
-- CSS Grid and Flexbox for layout
-- Responsive design principles
-
+*HELOYS - Coming Soon* 🌊
