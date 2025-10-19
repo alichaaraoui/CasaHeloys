@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CasaHeloys/static/css/main.eae99175.css",
-    "main.js": "/CasaHeloys/static/js/main.7fce024b.js",
+    "main.css": "/CasaHeloys/static/css/main.7f601d12.css",
+    "main.js": "/CasaHeloys/static/js/main.cab68a7f.js",
     "static/media/iphone.png": "/CasaHeloys/static/media/iphone.c18df1358849f466a996.png",
     "static/media/background.png": "/CasaHeloys/static/media/background.5a3ca21d28563030a607.png",
     "static/media/logo.png": "/CasaHeloys/static/media/logo.9c43c0a9faeec75bfced.png",
     "index.html": "/CasaHeloys/index.html",
-    "main.eae99175.css.map": "/CasaHeloys/static/css/main.eae99175.css.map",
-    "main.7fce024b.js.map": "/CasaHeloys/static/js/main.7fce024b.js.map"
+    "main.7f601d12.css.map": "/CasaHeloys/static/css/main.7f601d12.css.map",
+    "main.cab68a7f.js.map": "/CasaHeloys/static/js/main.cab68a7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eae99175.css",
-    "static/js/main.7fce024b.js"
+    "static/css/main.7f601d12.css",
+    "static/js/main.cab68a7f.js"
   ]
 }

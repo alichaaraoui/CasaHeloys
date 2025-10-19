@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import backgroundImg from './background.png';
 import iphoneImg from './iphone.png';
@@ -10,6 +10,24 @@ function App() {
     email: ''
   });
   const [isExpanded, setIsExpanded] = useState(false);
+  const [showAdmin, setShowAdmin] = useState(false);
+
+  // Get all subscribers
+  const getSubscribers = () => {
+    return JSON.parse(localStorage.getItem('heloys-subscribers') || '[]');
+  };
+
+  // Toggle admin view with Ctrl+Shift+A
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+        e.preventDefault();
+        setShowAdmin(!showAdmin);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showAdmin]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -97,6 +115,28 @@ function App() {
           </div>
         </div>
       </div>
+      
+      {/* Admin Panel - Hidden by default */}
+      {showAdmin && (
+        <div className="admin-panel">
+          <h3>Subscribers List ({getSubscribers().length} total)</h3>
+          <div className="subscribers-list">
+            {getSubscribers().map((subscriber, index) => (
+              <div key={index} className="subscriber-item">
+                <strong>{subscriber.name}</strong> - {subscriber.email}
+                <br />
+                <small>{new Date(subscriber.date).toLocaleString()}</small>
+              </div>
+            ))}
+            {getSubscribers().length === 0 && (
+              <p>No subscribers yet.</p>
+            )}
+          </div>
+          <button onClick={() => setShowAdmin(false)} className="close-admin">
+            Close
+          </button>
+        </div>
+      )}
     </div>
   );
 }
