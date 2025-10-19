@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eae99175.css",
+    "main.js": "/static/js/main.af5ea80a.js",
+    "static/media/iphone.png": "/static/media/iphone.c18df1358849f466a996.png",
+    "static/media/background.png": "/static/media/background.5a3ca21d28563030a607.png",
+    "static/media/logo.png": "/static/media/logo.9c43c0a9faeec75bfced.png",
+    "index.html": "/index.html",
+    "main.eae99175.css.map": "/static/css/main.eae99175.css.map",
+    "main.af5ea80a.js.map": "/static/js/main.af5ea80a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eae99175.css",
+    "static/js/main.af5ea80a.js"
+  ]
+}
