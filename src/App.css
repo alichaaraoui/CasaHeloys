@@ -1,0 +1,393 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.desktop-bg {
+  display: block;
+}
+
+.mobile-bg {
+  display: none;
+}
+
+.logo-section {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.subscription-section {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  max-width: 500px;
+  width: 90%;
+}
+
+.brand-logo {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.gradient-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  max-width: 350px;
+  margin: 0 auto;
+  transition: all 0.4s ease;
+}
+
+.gradient-box.expanded {
+  padding: 35px 20px;
+}
+
+.form-container {
+  position: relative;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  margin-top: 0;
+  visibility: hidden;
+}
+
+.subscription-form.show {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 20px;
+  visibility: visible;
+}
+
+.initial-button {
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.4s ease;
+}
+
+.gradient-box.expanded .initial-button {
+  display: none;
+}
+
+.submit-button {
+  width: 100%;
+  max-width: 300px;
+}
+
+.gradient-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.coming-soon {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.water-gradient-button {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.water-gradient-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.water-gradient-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.water-gradient-button:hover::before {
+  left: 100%;
+}
+
+.water-gradient-button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.2);
+}
+
+.social-icon {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+}
+
+.instagram-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-link:hover .instagram-icon {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .desktop-bg {
+    display: none;
+  }
+  
+  .mobile-bg {
+    display: block;
+  }
+  
+  .logo-section {
+    top: 15%;
+  }
+  
+  .brand-logo {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  
+  .subscription-section {
+    width: 95%;
+    top: 65%;
+  }
+  
+  .gradient-box {
+    max-width: 250px;
+    padding: 15px 12px;
+  }
+  
+  .coming-soon {
+    font-size: 0.9rem;
+  }
+  
+  .form-input {
+    font-size: 0.9rem;
+  }
+  
+  .water-gradient-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-section {
+    top: 10%;
+  }
+  
+  .brand-logo {
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+  
+  .subscription-section {
+    width: 95%;
+    top: 68%;
+    padding: 10px;
+  }
+  
+  .gradient-box {
+    max-width: 200px;
+    padding: 12px 10px;
+  }
+  
+  .gradient-box.expanded {
+    padding: 18px 10px;
+  }
+  
+  .form-input,
+  .water-gradient-button {
+    max-width: 180px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .coming-soon {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+  
+  .subscription-form.show {
+    max-height: 250px;
+    margin-top: 12px;
+  }
+  
+  .instagram-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-icon {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-section {
+    top: 8%;
+  }
+  
+  .brand-logo {
+    max-width: 240px;
+    margin-bottom: 0;
+  }
+  
+  .subscription-section {
+    top: 70%;
+  }
+  
+  .gradient-box {
+    max-width: 180px;
+    padding: 10px 8px;
+  }
+  
+  .gradient-box.expanded {
+    padding: 15px 8px;
+  }
+  
+  .form-input,
+  .water-gradient-button {
+    max-width: 160px;
+    padding: 8px 10px;
+    font-size: 0.7rem;
+  }
+  
+  .coming-soon {
+    font-size: 0.65rem;
+    margin-bottom: 6px;
+  }
+  
+  .subscription-form.show {
+    max-height: 220px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    margin-top: 10px;
+  }
+}
+
