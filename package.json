@@ -2,6 +2,7 @@
   "name": "house-of-heloys",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alichaaraoui.github.io/CasaHeloys",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

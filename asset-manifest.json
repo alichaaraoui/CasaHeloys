@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.eae99175.css",
-    "main.js": "/static/js/main.af5ea80a.js",
-    "static/media/iphone.png": "/static/media/iphone.c18df1358849f466a996.png",
-    "static/media/background.png": "/static/media/background.5a3ca21d28563030a607.png",
-    "static/media/logo.png": "/static/media/logo.9c43c0a9faeec75bfced.png",
-    "index.html": "/index.html",
-    "main.eae99175.css.map": "/static/css/main.eae99175.css.map",
-    "main.af5ea80a.js.map": "/static/js/main.af5ea80a.js.map"
+    "main.css": "/CasaHeloys/static/css/main.eae99175.css",
+    "main.js": "/CasaHeloys/static/js/main.7fce024b.js",
+    "static/media/iphone.png": "/CasaHeloys/static/media/iphone.c18df1358849f466a996.png",
+    "static/media/background.png": "/CasaHeloys/static/media/background.5a3ca21d28563030a607.png",
+    "static/media/logo.png": "/CasaHeloys/static/media/logo.9c43c0a9faeec75bfced.png",
+    "index.html": "/CasaHeloys/index.html",
+    "main.eae99175.css.map": "/CasaHeloys/static/css/main.eae99175.css.map",
+    "main.7fce024b.js.map": "/CasaHeloys/static/js/main.7fce024b.js.map"
   },
   "entrypoints": [
     "static/css/main.eae99175.css",
-    "static/js/main.af5ea80a.js"
+    "static/js/main.7fce024b.js"
   ]
 }
